@@ -4,9 +4,7 @@ import com.felipi.aprendendospring.infrastructure.entity.Usuario;
 import com.felipi.aprendendospring.infrastructure.exceptions.ConflictException;
 import com.felipi.aprendendospring.infrastructure.exceptions.ResourceNotFoundException;
 import com.felipi.aprendendospring.infrastructure.repository.UsuarioRepository;
-import io.jsonwebtoken.security.Password;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +13,6 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 
 public class UsuarioService {
-
 
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
